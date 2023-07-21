@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: rgb(19, 20, 26);
+}
+
+body {
+    margin: 1rem 4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 4rem;
+    font-size: 18px;
+    color: var(--primary);
+    cursor: pointer
+}
+
+.chevron_logo {
+    width: 60px;
+}
+
+
+.main-section {
+    position: relative;
+    height: 500px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.main-section::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-image: url("./assets/oil.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    filter: brightness(40%)
+}
+
+.main-section div {
+    isolation: isolate;
+    color: white;
+    padding-top: 4rem;
+}
+
+.main-section div p:nth-child(2){
+    padding-top: 5rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main-section div p:nth-child(3){
+    padding-top: 16rem;
+    font-size: 12px;
+    font-weight: thin;
+    color: gray;
+}
+
+article {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+article h4 {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+article div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+    margin-top: 4rem;
+}
+
+article div p:first-child{
+    color: var(--primary);
+    font-size: 35px;
+    width: 400px;
+    font-weight: bold;
+}
+
+article div p:last-child {
+    color: gray;
+    line-height: 30px;
+}
+
+.second-section {
+    position: relative;
+    height: 400px;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+.second-section::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-image: url("./assets/oil.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    filter: brightness(40%)
+}
+
+.second-section div {
+    isolation: isolate;
+    color: white;
+}
+
+.second-section div p:first-child {
+    font-size: 14px;
+}
+
+.second-section div h4 {
+    font-size: 40px;
+    margin-top: 2rem;
+}
+
+.second-section div p:last-child {
+    margin-top: 2rem;
+    width: 400px;
+}
+
+.black-sec {
+    background-color: rgb(7, 10, 17);
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+
+.special-article h4 {
+    color: var(--primary);
+    font-size: 12px;
+    color: white;
+}
+
+.special-article div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.header {
+    position: relative;
+    top: -2rem;
+    align-self: start;
+}
+
+.oil {
+    width: 500px;
+    border-radius: 30px;
+    height: 300px;
+}
+
+.oil:hover{
+    filter: brightness(50%);
+}
+
+.mundo {
+    width: 90vw;
+    margin: auto;
+}
+
+.last-section {
+    margin-top: 4rem;
+}
+
+.last-section p {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.last-section h4 {
+    font-size: 40px;
+    margin: 2rem 0rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 4rem;
+    background-color: rgb(7, 10, 17);
+    border-radius: 30px;
+    padding: 2rem;
+    align-items: center;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li:first-child {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+footer ul li{
+    font-size: 12px;
+}
